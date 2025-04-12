@@ -74,3 +74,11 @@ print("Resultados guardados en pv_lcoe_results.csv")
 # Además, puedes ajustar parámetros del arreglo PV (azimuth, tilt, gcr, etc.)
 # o probar con diferentes archivos de recursos solares.
 # ------------------------------------------------------
+
+# Crear un modelo PVWatts "desde cero" y asignar el recurso solar
+pv_model = pv.new()
+pv_model.SolarResource.solar_resource_file = solar_resource_file
+
+# Configurar parámetros mínimos del sistema PV
+
+    
